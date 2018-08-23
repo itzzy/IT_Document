@@ -1,6 +1,7 @@
 ###spark-submit脚本
 ---
 ###甘意
+```
 #!/bin/bash
 set -e
 spark-submit 
@@ -18,8 +19,10 @@ spark-submit
 /usr/hdp/current/spark-client/lib/datanucleus-core-3.2.10.jar,
 /usr/hdp/current/spark-client/lib/datanucleus-rdbms-3.2.9.jar 
 /home/appuser/kettle/data_import/azkaban_sh/dw_log/dw_log_spk_efficiency_click.jar
+```
 
 ###海涛
+```
 nohup 
 spark-submit  
 --master yarn 
@@ -29,3 +32,5 @@ spark-submit
 --executor-memory 2G  
 --executor-cores 2  
 realtime-data-calculate-1.3.0-jar-with-dependencies.jar 10 &
+```
+![yarn-cluster](/Users/zzy/Documents/zzy/code_github/IT_Document/spark/img/yarn-cluster--haitao.jpg)
